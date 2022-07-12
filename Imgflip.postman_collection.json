@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "a212493a-8247-4d84-ad87-71702150a89c",
+		"name": "Imgflip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "caption_image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "{{USERNAME}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{PASSWORD}}",
+							"type": "text"
+						},
+						{
+							"key": "text0",
+							"value": "top",
+							"type": "text"
+						},
+						{
+							"key": "text1",
+							"value": "bottom",
+							"type": "text"
+						},
+						{
+							"key": "template_id",
+							"value": "181913649",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.imgflip.com/caption_image",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imgflip",
+						"com"
+					],
+					"path": [
+						"caption_image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_memes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.imgflip.com/get_memes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imgflip",
+						"com"
+					],
+					"path": [
+						"get_memes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "USERNAME",
+			"value": ""
+		},
+		{
+			"key": "PASSWORD",
+			"value": ""
+		}
+	]
+}
